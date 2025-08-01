@@ -63,7 +63,12 @@ Route::group(['prefix'=>'admin'], function(){
     // Route::post('role/update/{id}', [RoleController::class, 'update'])->name('role.update');
     // Route::delete('/role/{id}', [RoleController::class, 'destroy'])->name('role.destroy');
 
-
+    // Route::get('/role', [RoleController::class, 'index'])->name('role.index');
+    // Route::get('role/create', [RoleController::class, 'create'])->name('role.create');
+    // Route::post('role/store', [RoleController::class, 'store'])->name('role.store');
+    // Route::get('role/edit/{id}', [RoleController::class, 'edit'])->name('role.edit');
+    // Route::post('role/update/{id}', [RoleController::class, 'update'])->name('role.update');
+    // Route::delete('/role/{id}', [RoleController::class, 'destroy'])->name('role.destroy');
 
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('admin.login');
     Route::post('/login/submit', [LoginController::class, 'admin_login'])->name('admin.login.submit');
